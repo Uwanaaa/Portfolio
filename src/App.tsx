@@ -1,4 +1,5 @@
 import './App.css';
+import { Analytics } from "@vercel/analytics/next"
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -11,6 +12,7 @@ const App: React.FC = () => (
     <Routes>
       <Route path="/" element={<Home />} />
     </Routes>
+    <Analytics />
   </Router>
 );
 
