@@ -143,7 +143,7 @@ const Home: React.FC = () => {
                             <p className="card__job-title"> EventTick </p>
                             </div>
                             </div>
-                            <button className="card__btn">View</button>
+                            <button className="card__btn"><a href="https://github.com/Uwanaaa/EventTick">View</a></button>
                         </footer>
                         </article>
                     </div>
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
                             <p className="card__job-title"> SmartInvent </p>
                             </div>
                             </div>
-                            <button className="card__btn">View</button>
+                            <button className="card__btn"><a href="https://github.com/Uwanaaa/SmartInvent2">View</a></button>
                         </footer>
                         </article>
                     </div>
