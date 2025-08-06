@@ -1,30 +1,40 @@
 import '../App.css'
-import React from 'react';
+import React, { useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 
 
 const Home: React.FC = () => {
 
+    useEffect(() => {
+        document.body.classList.add('no-scroll')
+    }, [])
+
     const moveToAbout = () => {
+        document.body.classList.remove('no-scroll')
         const nextPage = document.getElementById('about-container');
         if (nextPage) {
             nextPage.scrollIntoView({ behavior: 'smooth' });
         }
+         document.body.classList.add('no-scroll')
     }
 
     const moveToProject = () => {
+        document.body.classList.remove('no-scroll')
         const nextPage = document.getElementById('project-container');
         if (nextPage) {
             nextPage.scrollIntoView({ behavior: 'smooth' });
         }
+         document.body.classList.add('no-scroll')
     }
 
     const moveToTop = () => {
+        document.body.classList.remove('no-scroll')
         const topPage = document.querySelector('.parent-container');
         if (topPage) {
             topPage.scrollIntoView({ behavior: 'smooth' });
         }
+         document.body.classList.add('no-scroll')
     }
 
     
